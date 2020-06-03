@@ -1,4 +1,4 @@
-# Setting up istio
+# Setting up istioo
 
 ```
 gcloud container clusters get-credentials standard-cluster-1 --zone=europe-west1-b
