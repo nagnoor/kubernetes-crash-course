@@ -88,9 +88,12 @@ docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=tod
 Using Link
 
 ```
-docker container run -p 8080:8080 --link=mysql -e RDS_HOSTNAME=mysql  in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+docker container run -p 8080:8080 --link=mysql -e RDS_HOSTNAME=mysql  mohdaz/todo-web-application-mysql:0.0.1-SNAPSHOT
 ```
-
+```
+So a persistent volume (PV) is the "physical" volume on the host machine that stores your persistent data. A persistent volume claim (PVC) is a request for the platform to create a PV for you, and you attach PVs to your pods via a PVC.
+Pod -> PVC -> PV -> Host machine
+```
 
 ### My SQL Shell Client
 
